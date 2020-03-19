@@ -1,0 +1,19 @@
+.footer {
+  margin: 10%;
+}
+
+.footnote {
+  font-family: 'Bellota Text', cursive;
+  font-size: small;
+}
+.disclaimer {
+  margin: 0px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-link:hover {
+  color: palevioletred;
+}
