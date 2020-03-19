@@ -1,3 +1,9 @@
+# React Covid19
+
+This is the ReactJS version of the [Covid19 India Tracker](https://covid19-in.netlify.com) I had built perviously.
+
+You can check out the older basic version of this tracker here [sydrawat/covid19.in](https://github.com/sydrawat/covid19.in).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +72,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Contributing
+
+In case you find any bugs or have any imporvements to make this app better, please raise an appropriate issue / PR regarding the same. PRs and issues are always welcome.
+
+&copy; 2020 Siddharth Rawat
