@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = props => {
   return (
     <div className="footer">
-      <nav className="navbar fixed-bottom bg-secondary">
+      <nav className="navbar brand-title bg-secondary">
         <span className="footnote">
           <p className="disclaimer">
             &copy; 2020 Siddharth Rawat. All rights reserved
