@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const color = {
   deaths: 'bg-secondary',
-  infected: 'bg-danger',
-  recovered: 'bg-success',
-  total_cases: 'bg-info'
+  active: 'bg-danger',
+  recoveries: 'bg-success',
+  total: 'bg-info'
 };
 
 const title = {
   deaths: 'DEAD',
-  infected: 'INFECTED',
-  recovered: 'RECOVERED',
-  total_cases: 'TOTAL'
+  active: 'INFECTED',
+  recoveries: 'RECOVERED',
+  total: 'TOTAL'
 };
 const Card = props => {
   return (

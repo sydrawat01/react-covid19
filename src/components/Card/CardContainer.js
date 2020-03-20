@@ -10,13 +10,13 @@ class CardContainer extends Component {
   }
 
   componentDidMount() {
-    const END_POINT = 'https://covid19api-in.herokuapp.com/getdata';
+    const END_POINT = 'https://api-covid19-in.herokuapp.com/getdata';
 
     axios
       .get(END_POINT)
       .then(response => {
         this.setState({
-          covid: response.data
+          covid: response.data.results[0]
         });
         // console.log(this.state.covid);
       })
