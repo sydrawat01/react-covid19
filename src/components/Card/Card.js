@@ -17,17 +17,17 @@ const title = {
 const Card = (props) => {
   let res = props.data;
   let dataArr = [
-    ['active', res.active],
-    ['cases', res.cases],
     ['deaths', res.deaths],
+    ['active', res.active],
     ['recovered', res.recovered],
+    ['cases', res.cases],
   ];
   console.log(dataArr);
 
   return (
     <div className="container">
       {dataArr.map(([key, value]) => (
-        <div className={['card', 'text-white', `${color[key]}`]}>
+        <div className={['card', 'text-white', `${color[key]}`].join(' ')}>
           <div className="card-body">
             <h5 className="card-title">{[`${title[key]}`]}</h5>
           </div>
