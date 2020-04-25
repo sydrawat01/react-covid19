@@ -4,20 +4,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const color = {
   deaths: 'bg-secondary',
   active: 'bg-danger',
-  recoveries: 'bg-success',
-  total: 'bg-info'
+  recovered: 'bg-success',
+  cases: 'bg-info',
 };
 
 const title = {
   deaths: 'DEAD',
   active: 'INFECTED',
-  recoveries: 'RECOVERED',
-  total: 'TOTAL'
+  recovered: 'RECOVERED',
+  cases: 'TOTAL',
 };
-const Card = props => {
+const Card = (props) => {
+  let res = props.data;
+  let dataArr = [
+    ['deaths', res.deaths],
+    ['active', res.active],
+    ['recovered', res.recovered],
+    ['cases', res.cases],
+  ];
+  console.log(dataArr);
+
   return (
     <div className="container">
-      {Object.entries(props.data).map(([key, value]) => (
+      {dataArr.map(([key, value]) => (
         <div className={['card', 'text-white', `${color[key]}`].join(' ')}>
           <div className="card-body">
             <h5 className="card-title">{[`${title[key]}`]}</h5>
@@ -29,7 +38,7 @@ const Card = props => {
         <div className="github">
           <a
             id="pr"
-            href="https://github.com/sydrawat/react-covid19/pulls"
+            href="https://github.com/sydrawat/react-covid19/issues"
             target="_blank"
             rel="noopener noreferrer"
           >

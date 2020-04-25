@@ -10,17 +10,16 @@ class CardContainer extends Component {
   }
 
   componentDidMount() {
-    const END_POINT = 'https://api-covid19-in.herokuapp.com/getdata';
+    const END_POINT = 'https://corona.lmao.ninja/v2/countries/India';
 
     axios
       .get(END_POINT)
-      .then(response => {
+      .then((response) => {
         this.setState({
-          covid: response.data.results[0]
+          covid: response.data,
         });
-        // console.log(this.state.covid);
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error, 'failed to fetch data!');
       });
   }
